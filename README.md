@@ -99,13 +99,3 @@ and recovery. A normal run shows:
 4. DeviceB recovering naturally to `SLEEP` or `ACTIVE`, or remaining in `FAULT`.
 5. If the fault persists, DeviceA sends a reset and DeviceB returns to `SLEEP`.
 
-## Potential extensions
-
-- Make timing, queue lengths, and the pseudo-random seed runtime-configurable.
-- Add queue-send failure counters and high-water-mark instrumentation.
-- Replace dynamic queue/task allocation with static allocation for an embedded
-  target.
-- Add unit tests for each transition table and integration tests for queue
-  overflow and delayed consumers.
-- Replace the deterministic simulation PRNG seed with a hardware entropy source
-  on a physical target.
